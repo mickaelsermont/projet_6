@@ -108,13 +108,6 @@ exports.modifySauce = (req, res, next) => {
         Sauce.findOne({ _id: req.params.id })
         .then(sauce => {
             const filename = sauce.imageUrl.split('/images/')[1];
-<<<<<<< HEAD
-<<<<<<< HEAD
-                       
-=======
->>>>>>> 37be648c46e09101cfd9b3eedf55713259113429
-=======
->>>>>>> 37be648c46e09101cfd9b3eedf55713259113429
             fs.unlink(`images/${filename}`, function (error) {
                 if (error) throw error;
                 // si pas d'erreur, l'image est effacé avec succès !

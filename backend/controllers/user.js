@@ -1,12 +1,4 @@
 const bcrypt = require('bcrypt');
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 37be648c46e09101cfd9b3eedf55713259113429
-=======
-
->>>>>>> 37be648c46e09101cfd9b3eedf55713259113429
 const User = require('../models/user');
 const jwt = require('jsonwebtoken');
 
