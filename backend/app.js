@@ -3,10 +3,12 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const path = require('path');
 
+require('dotenv/config');
+
 const saucesRoutes = require('./routes/sauce');
 const userRoutes = require('./routes/user');
 
-mongoose.connect('mongodb+srv://william:william123@cluster0-k7urj.mongodb.net/test?retryWrites=true&w=majority',
+mongoose.connect(process.env.URL_BDD,
   { useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true })
